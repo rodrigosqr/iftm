@@ -30,8 +30,7 @@ public class Leilao {
 				this.lanceValido(lance);
 			} else {
 				this.lanceInvalido(lance);
-			}
-			this.lances.add(lance);
+			}			
 		} else {
 			System.out.println(lance.getNomePessoa() + ", o Leilão está encerrado");
 		}
@@ -56,6 +55,7 @@ public class Leilao {
 
 	private void lanceValido(Lance lance) {
 		this.vencedor = lance;
+		this.lances.add(lance);
 		System.out.println(lance.getNomePessoa() + ", o seu lance foi aceito");
 	}
 
