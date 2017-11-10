@@ -1,5 +1,7 @@
+package mario.states;
+import mario.interfaces.MarioState;
 
-public class MarioFlor implements MarioState {
+public class MarioPequeno implements MarioState {
 
 	@Override
 	public MarioState pegarPena() {
@@ -15,14 +17,13 @@ public class MarioFlor implements MarioState {
 
 	@Override
 	public MarioState pegarCogumelo() {
-		System.out.println("Mario FLOR");
-		return this;
+		System.out.println("Mario Grande");
+		return new MarioGrande();
 	}
 
 	@Override
 	public MarioState levarDano() {
-		System.out.println("Mario vai para Grande");
-		return new MarioGrande();
+		System.out.println("Mario Morre");
+		return new MarioMorto();
 	}
-
 }

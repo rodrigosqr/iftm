@@ -1,3 +1,5 @@
+package main;
+import mario.Mario;
 
 public class Main {
 

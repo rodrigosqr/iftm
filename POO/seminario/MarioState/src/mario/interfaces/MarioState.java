@@ -1,3 +1,4 @@
+package mario.interfaces;
 
 public interface MarioState {
 

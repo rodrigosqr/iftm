@@ -1,3 +1,7 @@
+package mario;
+
+import mario.interfaces.MarioState;
+import mario.states.MarioPequeno;
 
 public class Mario {
 

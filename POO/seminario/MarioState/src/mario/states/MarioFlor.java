@@ -1,21 +1,23 @@
+package mario.states;
+import mario.interfaces.MarioState;
 
-public class MarioCapa implements MarioState {
+public class MarioFlor implements MarioState {
 
 	@Override
 	public MarioState pegarPena() {
 		System.out.println("Mario CAPA");
-		return this;
+		return new MarioCapa();
 	}
 
 	@Override
 	public MarioState pegarFlor() {
 		System.out.println("Mario FLOR");
-		return new MarioFlor();
+		return this;
 	}
 
 	@Override
 	public MarioState pegarCogumelo() {
-		System.out.println("Mario CAPA");
+		System.out.println("Mario FLOR");
 		return this;
 	}
 

@@ -1,3 +1,5 @@
+package mario.states;
+import mario.interfaces.MarioState;
 
 public class MarioMorto implements MarioState {
 
